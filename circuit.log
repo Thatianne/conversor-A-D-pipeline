@@ -1,0 +1,85 @@
+Circuit: * C:\users\thatiannecarvalho\My Documents\Faculdade\9ºSemestre\MI - PDS\pbl3\circuit.asc
+
+Limiting rise time of source v4 to 7e-006
+Limiting fall time of source v4 to 7e-006
+WARNING: Less than two connections to node A.  This node is used by A:X2:X2:1.
+WARNING: Less than two connections to node B.  This node is used by A:X2:X2:2.
+WARNING: Less than two connections to node C.  This node is used by A:X2:X2:3.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 2.20425e-007
+vernier = 0.00520833
+vernier = 0.00694444
+Gmin = 2.17693e-007
+vernier = 0.00925925
+Gmin = 2.13333e-007
+vernier = 0.0123457
+vernier = 0.0164609
+Gmin = 2.06383e-007
+vernier = 0.0219478
+vernier = 0.0292638
+Gmin = 1.95839e-007
+vernier = 0.0390184
+Gmin = 1.79883e-007
+vernier = 0.0520245
+vernier = 0.0693659
+Gmin = 1.56568e-007
+vernier = 0.0924879
+vernier = 0.123317
+Gmin = 1.25762e-007
+vernier = 0.164423
+Gmin = 8.8337e-008
+vernier = 0.21923
+vernier = 0.292307
+Gmin = 4.98558e-008
+vernier = 0.389743
+vernier = 0.519657
+Gmin = 2.04411e-008
+vernier = 0.692876
+Gmin = 4.99322e-009
+vernier = 0.923834
+vernier = 1
+Gmin = 6.26341e-010
+Gmin = 6.72529e-011
+Gmin = 7.22122e-012
+Gmin = 7.75373e-013
+Gmin = 0
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Tue Feb 11 14:14:50 2020
+Total elapsed time: 2.027 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 19190
+traniter = 17685
+tranpoints = 7026
+accept = 5282
+rejected = 1744
+matrix size = 61
+fillins = 35
+solver = Normal
+Thread vector: 96.8/35.7[4] 14.2/9.8[4] 17.5/6.3[4] 1.1/2.1[1]  2592/500
+Matrix Compiler1: 5.83 KB object code size  6.3/1.7/[1.5]
+Matrix Compiler2: 7.60 KB object code size  2.7/3.1/[0.6]
+
