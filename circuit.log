@@ -2,9 +2,22 @@ Circuit: * C:\users\thatiannecarvalho\My Documents\Faculdade\9ºSemestre\MI - PDS
 
 Limiting rise time of source v4 to 7e-006
 Limiting fall time of source v4 to 7e-006
-WARNING: Less than two connections to node A.  This node is used by A:X2:X2:1.
-WARNING: Less than two connections to node B.  This node is used by A:X2:X2:2.
-WARNING: Less than two connections to node C.  This node is used by A:X2:X2:3.
+WARNING: Node X3:NC_03 is floating.
+WARNING: Node X3:NC_04 is floating.
+WARNING: Node X3:NC_06 is floating.
+WARNING: Node X3:NC_07 is floating.
+WARNING: Node X3:NC_08 is floating.
+
+WARNING: Less than two connections to node N005.  This node is used by A:X2:X2:2.
+WARNING: Less than two connections to node X3:NC_01.  This node is used by R:X3:2.
+WARNING: Less than two connections to node X3:N006.  This node is used by V:X3:5.
+WARNING: Less than two connections to node X3:NC_02.  This node is used by S:X3:1.
+WARNING: Less than two connections to node X3:NC_03.  This node is used by S:X3:1.
+WARNING: Less than two connections to node X3:NC_04.  This node is used by S:X3:1.
+WARNING: Less than two connections to node X3:NC_05.  This node is used by S:X3:2.
+WARNING: Less than two connections to node X3:NC_06.  This node is used by S:X3:2.
+WARNING: Less than two connections to node X3:NC_07.  This node is used by S:X3:2.
+WARNING: Less than two connections to node X3:NC_08.  This node is used by S:X3:2.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -55,31 +68,191 @@ Gmin = 2.04411e-008
 vernier = 0.692876
 Gmin = 4.99322e-009
 vernier = 0.923834
+vernier = 0.461917
+vernier = 0.230959
+vernier = 0.115479
+Gmin = 2.65544e-009
+vernier = 0.0577396
+vernier = 0.0288698
+vernier = 0.0144349
+vernier = 0.00721745
+Gmin = 2.64588e-009
+vernier = 0.00360873
+vernier = 0.00180436
+vernier = 0.000902182
+Gmin = 2.64052e-009
+vernier = 0.00120291
+vernier = 0.000601454
+Gmin = 2.63655e-009
+vernier = 0.000801939
+vernier = 0.00106925
+Gmin = 2.63087e-009
+vernier = 0.00142567
+vernier = 0.000712834
+Gmin = 2.62642e-009
+vernier = 0.000950445
+vernier = 0.00126726
+vernier = 0.00063363
+Gmin = 2.62185e-009
+vernier = 0.00084484
+vernier = 0.00112645
+Gmin = 2.61655e-009
+vernier = 0.00150194
+vernier = 0.000750968
+Gmin = 2.6114e-009
+vernier = 0.00100129
+vernier = 0.00133505
+vernier = 0.000667527
+Gmin = 2.6065e-009
+vernier = 0.000890036
+Gmin = 2.60143e-009
+vernier = 0.00118671
+vernier = 0.000593357
+vernier = 0.000791143
+Gmin = 2.5979e-009
+vernier = 0.00105486
+Gmin = 2.59174e-009
+vernier = 0.00140648
+vernier = 0.000703238
+vernier = 0.00093765
+Gmin = 2.58764e-009
+vernier = 0.0012502
+vernier = 0.0006251
+Gmin = 2.5838e-009
+vernier = 0.000833466
+vernier = 0.00111129
+Gmin = 2.57771e-009
+vernier = 0.00148172
+vernier = 0.000740858
+vernier = 0.000987811
+Gmin = 2.57326e-009
+vernier = 0.00131708
+vernier = 0.000658541
+Gmin = 2.56881e-009
+vernier = 0.000878054
+vernier = 0.00117074
+vernier = 0.000585369
+Gmin = 2.56459e-009
+vernier = 0.000780492
+Gmin = 2.56021e-009
+vernier = 0.00104066
+vernier = 0.00138754
+vernier = 0.00069377
+Gmin = 2.55528e-009
+vernier = 0.000925027
+Gmin = 2.54997e-009
+vernier = 0.00123337
+vernier = 0.000616684
+vernier = 0.000822246
+Gmin = 2.54643e-009
+vernier = 0.00109633
+vernier = 0.00146177
+Gmin = 2.53975e-009
+vernier = 0.000730885
+vernier = 0.000974513
+Gmin = 2.53589e-009
+vernier = 0.00129935
+vernier = 0.000649675
+vernier = 0.000866233
+Gmin = 2.53205e-009
+vernier = 0.00115498
+vernier = 0.000577488
+Gmin = 2.52821e-009
+vernier = 0.000769984
+vernier = 0.00102665
+Gmin = 2.52327e-009
+vernier = 0.00136886
+vernier = 0.00068443
+Gmin = 2.51896e-009
+vernier = 0.000912573
+vernier = 0.00121676
+vernier = 0.000608382
+Gmin = 2.5147e-009
+vernier = 0.000811176
+Gmin = 2.51011e-009
+vernier = 0.00108157
+vernier = 0.00144209
+vernier = 0.000721045
+Gmin = 2.50514e-009
+vernier = 0.000961393
+vernier = 0.00128186
+Gmin = 2.49938e-009
+vernier = 0.000640929
+vernier = 0.000854571
+Gmin = 2.49604e-009
+vernier = 0.00113943
+vernier = 0.000569714
+vernier = 0.000759618
+Gmin = 2.49273e-009
+vernier = 0.00101282
+Gmin = 2.48721e-009
+vernier = 0.00135043
+vernier = 0.000675216
+vernier = 0.000900288
+Gmin = 2.48337e-009
+vernier = 0.00120038
+Gmin = 2.47667e-009
+vernier = 0.00160051
+vernier = 0.00213401
+Gmin = 2.46547e-009
+vernier = 0.00284535
+vernier = 0.0037938
+Gmin = 2.44771e-009
+vernier = 0.0050584
+Gmin = 2.42002e-009
+vernier = 0.00674453
+vernier = 0.00899271
+Gmin = 2.37426e-009
+vernier = 0.0119903
+vernier = 0.015987
+Gmin = 2.30311e-009
+vernier = 0.021316
+Gmin = 2.19551e-009
+vernier = 0.0284214
+vernier = 0.0378951
+Gmin = 2.02631e-009
+vernier = 0.0505268
+vernier = 0.0673691
+Gmin = 1.78361e-009
+vernier = 0.0898255
+Gmin = 1.46021e-009
+vernier = 0.119767
+vernier = 0.15969
+Gmin = 1.04601e-009
+vernier = 0.212919
+vernier = 0.283893
+Gmin = 6.17787e-010
+vernier = 0.378523
+Gmin = 2.72972e-010
+vernier = 0.504698
+vernier = 0.67293
+Gmin = 7.18402e-011
+vernier = 0.89724
 vernier = 1
-Gmin = 6.26341e-010
-Gmin = 6.72529e-011
-Gmin = 7.22122e-012
-Gmin = 7.75373e-013
-Gmin = 0
+Gmin = 1.00032e-011
+Gmin = 1.07409e-012
+Gmin = 1.15329e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
+Ignoring empty pin current: Ix(x3:b)
+Ignoring empty pin current: Ix(x3:b)
 
-Date: Tue Feb 11 14:14:50 2020
-Total elapsed time: 2.027 seconds.
+Date: Tue Feb 18 13:41:33 2020
+Total elapsed time: 1.850 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 19190
-traniter = 17685
-tranpoints = 7026
-accept = 5282
-rejected = 1744
-matrix size = 61
-fillins = 35
+totiter = 15785
+traniter = 9328
+tranpoints = 3726
+accept = 2987
+rejected = 739
+matrix size = 76
+fillins = 15
 solver = Normal
-Thread vector: 96.8/35.7[4] 14.2/9.8[4] 17.5/6.3[4] 1.1/2.1[1]  2592/500
-Matrix Compiler1: 5.83 KB object code size  6.3/1.7/[1.5]
-Matrix Compiler2: 7.60 KB object code size  2.7/3.1/[0.6]
+Thread vector: 37.4/23.7[4] 10.5/5.4[4] 9.0/4.6[4] 1.5/9.1[1]  2592/500
+Matrix Compiler1: 4.19 KB object code size  4.8/1.4/[0.5]
+Matrix Compiler2: 6.38 KB object code size  2.2/2.2/[0.4]
 
