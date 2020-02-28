@@ -1,0 +1,84 @@
+* C:\users\thatiannecarvalho\My Documents\Faculdade\9ºSemestre\MI - PDS\pbl3\stage.asc
+V1 Vin 0 SINE(2.5 2.5 1) AC 1
+V4 Clock 0 PULSE(0 5 0 0 0 0.00015 0.00195) AC 1
+XX1 Clock Vin N001 sh
+XX3 Vin A B flash2bits
+XX4 A B N002 dac
+XX2 N001 N002 Vout subtractor
+
+* block symbol definitions
+.subckt sh Clock Vin Vout
+C1 N002 0 10p
+XU1 Vin N003 N004 N001 N003 LT1001
+XU2 N002 Vout N004 N001 Vout LT1001
+V2 N001 0 -12
+V3 N004 0 12
+M1 N003 Clock N002 N002 NMOS
+.ends sh
+
+.subckt flash2bits Vin A B
+XX1 Vin N001 N002 N003 4bitscomparator
+XX2 N001 N002 N003 A B 3dec2bits
+.ends flash2bits
+
+.subckt dac A B Vout
+R1 N002 A 1k
+R2 N002 B 2k
+R3 N003 N002 3.3k
+V5 N001 0 12
+XU3 0 N002 N001 N005 N003 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R4 Vout N004 1k
+XU1 0 N004 N001 0 Vout level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R5 N004 N003 1k
+V4 N005 0 -12
+.model SW SW()
+.ends dac
+
+.subckt subtractor V+ V- Vout
+R4 N008 0 1k
+R3 N008 V+ 500
+R1 N002 V- 500
+R2 N003 N002 1k
+V1 N001 0 12
+XU1 N008 N002 N001 N009 N003 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+V2 N009 0 -12
+XU2 N007 N005 N006 N010 Vout level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R5 N005 N004 1k
+V4 N006 0 12
+V5 N010 0 -12
+R6 Vout N005 1k
+R7 N007 N003 1k
+V3 N004 0 -2.5
+R8 0 N007 1k
+.ends subtractor
+
+.subckt 4bitscomparator Vin 1 2 3
+R4 N001 N003 1k
+V5 N001 0 5
+R5 N003 N006 1k
+R6 N006 N008 1k
+V7 N004 0 5
+R2 N008 0 1k
+A1 0 0 0 0 N002 0 3 0 XOR
+A2 0 0 0 N002 N005 0 2 0 XOR
+A3 0 0 0 N005 N007 0 1 0 XOR
+V1 N009 0 SINE(2.5 2.5 100)
+XU1 Vin N003 N004 0 N002 LT1017
+XU2 Vin N006 N004 0 N005 LT1017
+XU3 Vin N008 N004 0 N007 LT1017
+.ends 4bitscomparator
+
+.subckt 3dec2bits 1 2 3 A B
+A1 0 0 3 2 0 0 A 0 OR
+A2 0 3 1 0 0 0 B 0 OR
+.ends 3dec2bits
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\thatiannecarvalho\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5s
+.lib LTC.lib
+.lib LTC1.lib
+.lib UniversalOpamps2.sub
+.backanno
+.end

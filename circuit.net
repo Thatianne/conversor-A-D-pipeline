@@ -1,26 +1,46 @@
 * C:\users\thatiannecarvalho\My Documents\Faculdade\9ºSemestre\MI - PDS\pbl3\circuit.asc
-V1 N002 0 SINE(2.5 2.5 1) AC 1
-V2 N001 0 PULSE(0 5 0 0 0 0.005 0.025) AC 1
-XX1 N001 N002 10 9 N003 stage
-XX2 N001 N003 8 7 N004 stage
-XX3 N001 N004 6 5 N005 stage
-XX4 N001 N005 4 3 N006 stage
-XX5 N006 2 1 flash2bits
+V1 N003 0 SINE(2.5 2.5 1) AC 1
+V2 N001 0 PULSE(0 5 0 0 0 0.00015 0.00195) AC 1
+XX1 N001 N003 8 7 N004 stage
+XX2 N001 N004 6 5 N005 stage
+XX3 N001 N005 4 3 N002 stage
+XX5 N002 2 1 flash2bits
+XX4 8 7 6 5 4 3 2 1 Vout dac10b
+C1 0 Vout2 1µ
+R1 Vout2 Vout 500
 
 * block symbol definitions
 .subckt stage Clock Vin A B Vout
-V1 NC_01 0 SINE(2.5 2.5 1) AC 1
-V4 NC_02 0 PULSE(0 5 0 0 0 0.005 0.025) AC 1
-XX1 Clock Vin N001 sh
+V1 N004 0 SINE(2.5 2.5 1) AC 1
+V4 N001 0 PULSE(0 5 0 0 0 0.00015 0.00195) AC 1
+XX1 Clock Vin N002 sh
 XX3 Vin A B flash2bits
-XX4 A B N002 dac
-XX2 N001 N002 Vout subtractor
+XX4 A B N003 dac
+XX2 N002 N003 Vout subtractor
 .ends stage
 
 .subckt flash2bits Vin A B
 XX1 Vin N001 N002 N003 4bitscomparator
 XX2 N001 N002 N003 A B 3dec2bits
 .ends flash2bits
+
+.subckt dac10b A B C D E F G H Vout
+R1 N002 A 500
+R2 N002 B 1k
+R3 N003 N002 1.27k
+V5 N001 0 12
+XU3 0 N002 N001 N005 N003 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R4 Vout N004 1k
+XU1 0 N004 N001 0 Vout level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R5 N004 N003 1k
+V4 N005 0 -12
+R6 N002 C 2k
+R7 N002 D 4k
+R8 N002 E 8k
+R9 N002 F 16k
+R10 N002 G 32k
+R11 N002 H 64k
+.ends dac10b
 
 .subckt sh Clock Vin Vout
 C1 N002 0 10p
@@ -45,12 +65,21 @@ V4 N005 0 -12
 .ends dac
 
 .subckt subtractor V+ V- Vout
-XU1 N003 N002 N001 0 Vout AD549
-R4 N003 0 2k
-R3 N003 V+ 500
+R4 N008 0 1k
+R3 N008 V+ 500
 R1 N002 V- 500
-R2 Vout N002 2k
+R2 N003 N002 1k
 V1 N001 0 12
+XU1 N008 N002 N001 N009 N003 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+V2 N009 0 -12
+XU2 N007 N005 N006 N010 Vout level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R5 N005 N004 1k
+V4 N006 0 12
+V5 N010 0 -12
+R6 Vout N005 1k
+R7 N007 N003 1k
+V3 N004 0 -2.5
+R8 0 N007 1k
 .ends subtractor
 
 .subckt 4bitscomparator Vin 1 2 3
@@ -78,7 +107,6 @@ A2 0 3 1 0 0 0 B 0 OR
 .model PMOS PMOS
 .lib C:\users\thatiannecarvalho\My Documents\LTspiceXVII\lib\cmp\standard.mos
 .tran 1.5s
-.lib ADI1.lib
 .lib LTC.lib
 .lib LTC1.lib
 .lib UniversalOpamps2.sub
