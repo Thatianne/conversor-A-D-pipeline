@@ -11,12 +11,15 @@ Limiting fall time of source v2 to 1.5e-005
 WARNING: Less than two connections to node X1:N004.  This node is used by V:X1:1.
 WARNING: Less than two connections to node X1:N001.  This node is used by V:X1:4.
 WARNING: Less than two connections to node X1:X3:X1:N009.  This node is used by V:X1:X3:X1:1.
+WARNING: Less than two connections to node X1:X4:N001.  This node is used by V:X1:X4:1.
 WARNING: Less than two connections to node X2:N004.  This node is used by V:X2:1.
 WARNING: Less than two connections to node X2:N001.  This node is used by V:X2:4.
 WARNING: Less than two connections to node X2:X3:X1:N009.  This node is used by V:X2:X3:X1:1.
+WARNING: Less than two connections to node X2:X4:N001.  This node is used by V:X2:X4:1.
 WARNING: Less than two connections to node X3:N004.  This node is used by V:X3:1.
 WARNING: Less than two connections to node X3:N001.  This node is used by V:X3:4.
 WARNING: Less than two connections to node X3:X3:X1:N009.  This node is used by V:X3:X3:X1:1.
+WARNING: Less than two connections to node X3:X4:N001.  This node is used by V:X3:X4:1.
 WARNING: Less than two connections to node X5:X1:N009.  This node is used by V:X5:X1:1.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -26,18 +29,37 @@ Gmin = 0.115292
 Gmin = 0.0123794
 Gmin = 0.00132923
 Gmin = 0.000142725
-Gmin = 1.5325e-005
-Gmin = 1.6455e-006
 vernier = 0.5
 vernier = 0.25
 vernier = 0.125
-Gmin = 4.31359e-007
+vernier = 0.166667
+Gmin = 0.000117476
+vernier = 0.222222
+vernier = 0.111111
+Gmin = 8.82286e-005
+vernier = 0.148148
+vernier = 0.197531
+Gmin = 6.09786e-005
+vernier = 0.263374
+Gmin = 3.4299e-005
+vernier = 0.351165
+vernier = 0.46822
+Gmin = 1.32956e-005
+vernier = 0.624294
+vernier = 0.832392
+Gmin = 3.05804e-006
+vernier = 1
+Gmin = 3.76335e-007
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
 vernier = 0.0625
 vernier = 0.03125
 vernier = 0.015625
 vernier = 0.0078125
 vernier = 0.00390625
 vernier = 0.00195313
+Gmin = 3.76335e-007
 vernier = 0.000976563
 vernier = 0.000488281
 Gmin = 0
@@ -51,26 +73,28 @@ Source Step = 3.0303%
 vernier = 0.25
 Source stepping failed
 
-Pseudo Transient succeeded in finding the operating point at 33.7034 s.
-Heightened Def Con from 0.881422 to 0.881422
-Heightened Def Con from 1.08326 to 1.08326
-Heightened Def Con from 1.48985 to 1.48985
+Pseudo Transient succeeded in finding the operating point at 17.847 s.
+Heightened Def Con from 0.0253744 to 0.0253744
+Heightened Def Con from 0.0604732 to 0.0604732
+Heightened Def Con from 0.370526 to 0.370526
+Heightened Def Con from 0.421232 to 0.421232
+Heightened Def Con from 0.760734 to 0.760734
 
-Date: Fri Feb 28 16:58:22 2020
-Total elapsed time: 66.535 seconds.
+Date: Mon Mar 09 14:54:37 2020
+Total elapsed time: 83.323 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 297106
-traniter = 287174
-tranpoints = 109568
-accept = 80689
-rejected = 28928
-matrix size = 302
-fillins = 679
+totiter = 301758
+traniter = 291469
+tranpoints = 102987
+accept = 74950
+rejected = 28095
+matrix size = 308
+fillins = 578
 solver = Normal
-Thread vector: 213.8/115.5[4] 43.3/18.7[4] 37.8/16.4[4] 4.5/3.5[4]  2592/500
-Matrix Compiler1: 51.39 KB object code size  47.9/15.8/[6.6]
-Matrix Compiler2: 38.24 KB object code size  15.2/14.2/[2.5]
+Thread vector: 214.5/136.8[4] 43.0/19.0[4] 36.7/13.1[4] 5.4/7.0[1]  2592/500
+Matrix Compiler1: 44.56 KB object code size  43.7/15.3/[5.1]
+Matrix Compiler2: 36.41 KB object code size  14.6/14.4/[3.2]
 
