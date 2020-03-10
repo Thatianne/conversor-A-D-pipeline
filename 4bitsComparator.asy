@@ -1,7 +1,7 @@
 Version 4
 SymbolType BLOCK
 RECTANGLE Normal -48 -56 48 56
-TEXT -44 -47 Left 1 Comparator
+TEXT -34 -45 Left 1 4xcomp
 WINDOW 0 0 -56 Bottom 2
 PIN -48 0 LEFT 8
 PINATTR PinName Vin
