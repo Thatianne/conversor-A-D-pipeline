@@ -1,7 +1,7 @@
-Circuit: * C:\users\thatiannecarvalho\My Documents\Faculdade\9ºSemestre\MI - PDS\pbl3\stage.asc
+Circuit: * C:\Users\ftiti\Desktop\conversor-A-D-pipeline-master\stage.asc
 
-Limiting rise time of source v4 to 1.5e-005
-Limiting fall time of source v4 to 1.5e-005
+Limiting rise time of source v4 to 1.5e-05
+Limiting fall time of source v4 to 1.5e-05
 WARNING: Less than two connections to node X3:X1:N009.  This node is used by V:X3:X1:1.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -11,49 +11,193 @@ Gmin = 0.115292
 Gmin = 0.0123794
 Gmin = 0.00132923
 Gmin = 0.000142725
-Gmin = 1.5325e-005
-Gmin = 1.6455e-006
+vernier = 0.5
+vernier = 0.666667
+Gmin = 4.98766e-05
+vernier = 0.888888
+vernier = 1
+Gmin = 7.53781e-06
+Gmin = 8.09366e-07
+vernier = 0.5
+Gmin = 2.2996e-07
+vernier = 0.666667
+vernier = 0.888888
+Gmin = 4.08669e-08
+vernier = 1
+Gmin = 4.58977e-09
 vernier = 0.5
 vernier = 0.25
 vernier = 0.125
-Gmin = 4.31359e-007
+Gmin = 2.68088e-09
 vernier = 0.0625
 vernier = 0.03125
 vernier = 0.015625
 vernier = 0.0078125
+Gmin = 2.64975e-09
 vernier = 0.00390625
 vernier = 0.00195313
 vernier = 0.000976563
-vernier = 0.000488281
+Gmin = 2.642e-09
+vernier = 0.00130208
+vernier = 0.000651042
+Gmin = 2.63749e-09
+vernier = 0.000868055
+vernier = 0.00115741
+Gmin = 2.63168e-09
+vernier = 0.00154321
+vernier = 0.000771604
+Gmin = 2.62661e-09
+vernier = 0.00102881
+vernier = 0.00137174
+vernier = 0.00068587
+Gmin = 2.6216e-09
+vernier = 0.000914493
+Gmin = 2.61622e-09
+vernier = 0.00121932
+vernier = 0.000609662
+vernier = 0.000812882
+Gmin = 2.61263e-09
+vernier = 0.00108384
+vernier = 0.00144512
+Gmin = 2.60586e-09
+vernier = 0.000722562
+vernier = 0.000963415
+Gmin = 2.60194e-09
+vernier = 0.00128455
+vernier = 0.000642277
+vernier = 0.000856369
+Gmin = 2.59804e-09
+vernier = 0.00114182
+Gmin = 2.59156e-09
+vernier = 0.00152243
+vernier = 0.000761216
+vernier = 0.00101495
+Gmin = 2.58704e-09
+vernier = 0.00135327
+vernier = 0.000676636
+Gmin = 2.58267e-09
+vernier = 0.000902182
+vernier = 0.00120291
+vernier = 0.000601454
+Gmin = 2.57835e-09
+vernier = 0.000801939
+Gmin = 2.57371e-09
+vernier = 0.00106925
+vernier = 0.00142567
+vernier = 0.000712834
+Gmin = 2.56867e-09
+vernier = 0.000950445
+vernier = 0.00126726
+Gmin = 2.56283e-09
+vernier = 0.00063363
+vernier = 0.00084484
+Gmin = 2.55945e-09
+vernier = 0.00112645
+vernier = 0.000563226
+Gmin = 2.55548e-09
+vernier = 0.000750968
+vernier = 0.00100129
+Gmin = 2.55033e-09
+vernier = 0.00133505
+vernier = 0.000667527
+Gmin = 2.54629e-09
+vernier = 0.000890036
+vernier = 0.00118671
+vernier = 0.000593357
+Gmin = 2.54214e-09
+vernier = 0.000791143
+vernier = 0.00105486
+Gmin = 2.53733e-09
+vernier = 0.00140648
+vernier = 0.000703238
+Gmin = 2.53265e-09
+vernier = 0.00093765
+vernier = 0.0012502
+vernier = 0.0006251
+Gmin = 2.5282e-09
+vernier = 0.000833466
+Gmin = 2.5236e-09
+vernier = 0.00111129
+vernier = 0.000555644
+vernier = 0.000740858
+Gmin = 2.52039e-09
+vernier = 0.000987811
+Gmin = 2.51479e-09
+vernier = 0.00131708
+vernier = 0.000658541
+vernier = 0.000878054
+Gmin = 2.51107e-09
+vernier = 0.00117074
+vernier = 0.000585369
+Gmin = 2.50758e-09
+vernier = 0.000780492
+vernier = 0.00104066
+Gmin = 2.50204e-09
+vernier = 0.00138754
+vernier = 0.00069377
+vernier = 0.000925027
+Gmin = 2.49799e-09
+vernier = 0.00123337
+Gmin = 2.49126e-09
+vernier = 0.00164449
+vernier = 0.00219265
+Gmin = 2.48028e-09
+vernier = 0.00292354
+vernier = 0.00389805
+Gmin = 2.46297e-09
+vernier = 0.0051974
+Gmin = 2.43515e-09
+vernier = 0.00692986
+vernier = 0.00923982
+Gmin = 2.39026e-09
+vernier = 0.0123198
+vernier = 0.0164263
+Gmin = 2.32084e-09
+vernier = 0.0219018
+Gmin = 2.21253e-09
+vernier = 0.0292024
+vernier = 0.0389365
+Gmin = 2.04617e-09
+vernier = 0.0519153
+vernier = 0.0692203
+Gmin = 1.80829e-09
+vernier = 0.0922938
+Gmin = 1.48074e-09
+vernier = 0.123058
+vernier = 0.164078
+Gmin = 1.06964e-09
+vernier = 0.21877
+vernier = 0.291694
+Gmin = 6.42002e-10
+vernier = 0.388925
+Gmin = 2.83924e-10
+vernier = 0.518566
+vernier = 0.691421
+Gmin = 7.7184e-11
+vernier = 0.921895
+vernier = 1
+Gmin = 1.10268e-11
+Gmin = 1.18399e-12
+Gmin = 1.2713e-13
 Gmin = 0
-Gmin stepping failed
+Gmin stepping succeeded in finding the operating point.
 
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-vernier = 0.25
-Source Step = 0.0177557%
-Starting source stepping with srcstepmethod=1
-Source Step = 3.0303%
-vernier = 0.25
-Source stepping failed
 
-Pseudo Transient succeeded in finding the operating point at 30.5411 s.
-
-Date: Fri Feb 28 16:46:16 2020
-Total elapsed time: 11.161 seconds.
+Date: Tue Mar 10 00:21:43 2020
+Total elapsed time: 4.294 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 136956
-traniter = 128672
-tranpoints = 61173
-accept = 45794
-rejected = 15391
-matrix size = 83
-fillins = 76
+totiter = 138673
+traniter = 133224
+tranpoints = 62451
+accept = 46743
+rejected = 15708
+matrix size = 97
+fillins = 68
 solver = Normal
-Thread vector: 41.8/26.3[4] 12.0/5.9[4] 9.6/4.6[4] 1.1/3.8[1]  2592/500
-Matrix Compiler1: 8.00 KB object code size  7.8/2.4/[1.3]
-Matrix Compiler2: 8.65 KB object code size  3.0/2.7/[0.6]
+Thread vector: 24.3/12.3[7] 9.3/3.6[7] 4.9/1.9[7] 0.4/0.9[1]  2592/500
+Matrix Compiler1: 7.63 KB object code size  2.4/1.6/[0.6]
+Matrix Compiler2: 9.84 KB object code size  1.7/2.1/[0.6]
 
